@@ -1,4 +1,4 @@
-SOURCE = draft-hoffman-rfc9364bis
+SOURCE = draft-ietf-dnsop-rfc9364bis
 all: $(SOURCE).xml $(SOURCE).txt
 
 $(SOURCE).txt:	$(SOURCE).xml
