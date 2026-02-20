@@ -1,7 +1,7 @@
 ---
 title: DNS Security Extensions (DNSSEC)
 abbrev: DNSSEC
-docname: draft-ietf-dnsop-rfc9364bis-00
+docname: draft-ietf-dnsop-rfc9364bis-01
 ipr: trust200902
 submissiontype: IETF
 cat: bcp
@@ -23,6 +23,7 @@ normative:
   RFC5155:
   RFC5702:
   RFC6840:
+  RFC9364:
 
 informative:
   RFC2065:
@@ -97,7 +98,7 @@ DNSSEC.  It does not, however, point to standards that rely on zones
 needing to be signed by DNSSEC, such as DNS-Based Authentication of
 Named Entities (DANE) {{RFC6698}}.
 
-This document obsoletes {{?RFC9364}}. Changes made since {{?RFC9364}} are listed in {{sec-changes}}.
+This document obsoletes {{RFC9364}}. Changes made since {{RFC9364}} are listed in {{sec-changes}}.
 
 ##  DNSSEC as a Best Current Practice
 
@@ -310,7 +311,7 @@ this document apply here.
 
 # Changes Since RFC 9364 {#sec-changes}
 
-This document obsoletes {{?RFC9364}}.
+This document obsoletes {{RFC9364}}.
 
 The main changes from that document are:
 
