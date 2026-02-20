@@ -81,7 +81,7 @@ This document is being tracked at (https://github.com/paulehoffman/rfc9364bis).
 
 #  Introduction
 
-The core specification for what we know as DNSSEC (the combination of
+The core specification for what is known as DNSSEC (the combination of
 {{RFC4033}}, {{RFC4034}}, and {{RFC4035}}) describes a set of protocols
 that provide origin authentication of DNS data.  {{RFC6840}} updates
 and extends those core RFCs but does not fundamentally change the way
@@ -96,6 +96,8 @@ It also points to the relevant IANA registry groups that relate to
 DNSSEC.  It does not, however, point to standards that rely on zones
 needing to be signed by DNSSEC, such as DNS-Based Authentication of
 Named Entities (DANE) {{RFC6698}}.
+
+This document obsoletes {{?RFC9364}}. Changes made since {{?RFC9364}} are listed in {{sec-changes}}.
 
 ##  DNSSEC as a Best Current Practice
 
@@ -283,9 +285,6 @@ zones that are not currently securely delegated".
 has used to distribute the DNSSEC trust anchors".
 * {{RFC9859}} "generalizes and extends the use of DNS NOTIFY ... to allow other types of actions that were previously lacking a trigger mechanism to be triggered via the DNS." The primary action described in the RFC is a new DSYNC record that indicates that "a parent would like child operators to send them a NOTIFY message upon publication of a new CDS/CDNSKEY/CSYNC RRset".
 
-There will certainly be other RFCs related to DNSSEC that are
-published after this one.
-
 # IANA Considerations
 
 IANA already has three registry groups that relate to DNSSEC:
@@ -309,10 +308,11 @@ this document apply here.
 
 --- back
 
-# Changes Since RFC 9364
+# Changes Since RFC 9364 {#sec-changes}
 
-This document obsoletes RFC 9364, which is BCP 237.
-The changes from that document are:
+This document obsoletes {{?RFC9364}}.
+
+The main changes from that document are:
 
 - {{RFC9558}} was added to this document
 - RFC 7958 became {{RFC9718}}
